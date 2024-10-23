@@ -1,3 +1,11 @@
+###
+ # @Author: fuyunyou
+ # @Date: 2024-10-22 11:26:41
+ # @LastEditors: fuyunyou
+ # @LastEditTime: 2024-10-23 09:52:52
+ # @Description: 
+ # @FilePath: \learning_log\learning_logs\views.py
+###
 from django.shortcuts import render,redirect
 
 from .models import Topic,Entry
