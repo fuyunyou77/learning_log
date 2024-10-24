@@ -1,3 +1,11 @@
+###
+ # @Author: fuyunyou
+ # @Date: 2024-10-23 11:46:33
+ # @LastEditors: fuyunyou
+ # @LastEditTime: 2024-10-24 10:22:53
+ # @Description: 
+ # @FilePath: \learning_log\learning_log\settings.py
+###
 """
 Django settings for learning_log project.
 
@@ -113,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
