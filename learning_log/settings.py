@@ -2,9 +2,9 @@
  # @Author: fuyunyou
  # @Date: 2024-10-23 11:46:33
  # @LastEditors: fuyunyou
- # @LastEditTime: 2024-10-24 10:22:53
+ # @LastEditTime: 2024-10-25 18:20:06
  # @Description: 
- # @FilePath: \learning_log\learning_log\settings.py
+ # @FilePath: \PythonCode\learning_log\learning_log\settings.py
 ###
 """
 Django settings for learning_log project.
@@ -140,7 +140,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #我的设置
 LOGIN_URL='users:login'
-
-#Heroku设置
-import django_heroku
-django_heroku.settings(locals())
