@@ -2,9 +2,9 @@
  # @Author: fuyunyou
  # @Date: 2024-10-23 11:46:33
  # @LastEditors: fuyunyou
- # @LastEditTime: 2024-10-25 18:20:06
+ # @LastEditTime: 2024-10-28 17:27:23
  # @Description: 
- # @FilePath: \PythonCode\learning_log\learning_log\settings.py
+ # @FilePath: \learning_log\learning_log\settings.py
 ###
 """
 Django settings for learning_log project.
@@ -140,3 +140,28 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #我的设置
 LOGIN_URL='users:login'
+
+# Platform.sh 设置
+from platformshconfig import Config
+
+config = Config()
+if config.is_valid_platform():
+    ALLOWED_HOSTS.append('.platformsh.site')
+
+    if config.appDir:
+        STATIC_ROOT = Path(config.appDir) / 'static'
+    if config.projectEntropy:
+        SECRET_KEY = config.projectEntropy
+
+    if not config.in_build():
+        db_settings = config.credentials('database')
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql',
+                'NAME': db_settings['path'],
+                'USER': db_settings['username'],
+                'PASSWORD': db_settings['password'],
+                'HOST': db_settings['host'],
+                'PORT': db_settings['port'],
+            },
+        }
