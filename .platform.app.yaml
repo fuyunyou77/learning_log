@@ -1,5 +1,5 @@
-name:"ll_project"
-type:"python:3.12"
+name: "ll_project"
+type: "python:3.12"
 
 relationships:
   database:"db:postgresql"
@@ -16,9 +16,9 @@ web:
     "/static":
         root: "static"
         expires: 1h
-        allow:true
+        allow: true
 
-disk:512
+disk: 512
 
 #设置用于读写日志的本地挂载
 mounts:
@@ -30,8 +30,7 @@ mounts:
 hooks:
   build: |
     pip install --upgrade pip
-#由于我只生成了一个依赖文件requirements.txt,所以只需要一个命令
-    pip install -r requirements.txt
+    pip install -r requirements.txt #由于我只生成了一个依赖文件requirements.txt,所以只需要一个命令
 
     mkdir logs
     python manage.py collectstatic
