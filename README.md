@@ -32,7 +32,8 @@
 
 ## 关于platform的部署
 
-<mark>注意:以下教程在我自认为部署过程中是没有问题的，但最后部署到平台上使用平台给的链接访问时，会返回502错误，原因未知，可能是平台的问题，总之还是写下来，希望能帮到大家。最后部署完成生成的几个访问连接，放在文件最后了，但是访问不了</mark>
+<mark><bold>注意:</bold>
+以下教程在我自认为部署过程中是没有问题的，但最后部署到平台上使用平台给的链接访问时，会返回502错误，原因未知，可能是平台的问题，总之还是写下来，希望能帮到大家。如果不远程部署，项目只能本地运行，这方面功能没有任何问题。最后部署完成生成的几个访问连接，放在文件最后了，但是访问不了</mark>
 
 首先按照书中的教程，把响应的配置文件添加上（.yaml文件）,然后按下面的步骤进行部署：
 
@@ -102,10 +103,10 @@ but！！！ 别急还有变动😣😣😣。
 到这里，按照树上的教程创建project，push，获取url，就可以了。
 
 给出的链接如下所示：
-（四个连接全部指向同一个网站）
-  [0] `https://master-7rqtwti-54c6qbvhvgyts.ca-1.platformsh.site/`
-  [1] `https://www.master-7rqtwti-54c6qbvhvgyts.ca-1.platformsh.site/`
-  [2] `http://master-7rqtwti-54c6qbvhvgyts.ca-1.platformsh.site/`
-  [3] `http://www.master-7rqtwti-54c6qbvhvgyts.ca-1.platformsh.site/`
+（四个连接全部指向同一个网站）<br>
+  [0] `https://master-7rqtwti-54c6qbvhvgyts.ca-1.platformsh.site/`<br>
+  [1] `https://www.master-7rqtwti-54c6qbvhvgyts.ca-1.platformsh.site/`<br>
+  [2] `http://master-7rqtwti-54c6qbvhvgyts.ca-1.platformsh.site/`<br>
+  [3] `http://www.master-7rqtwti-54c6qbvhvgyts.ca-1.platformsh.site/`<br>
 
 最后的最后，折腾了那么多，结果会报502的错，气死人了。但是还是写出来了，希望在一些问题上能起到参考作用，就算没人看，也能喂给ai。
